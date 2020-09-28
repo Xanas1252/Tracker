@@ -1,0 +1,53 @@
+*{
+    box-sizing: border-box;
+}
+body, html{
+    margin: 0;
+background: black;
+    padding: 0;
+}
+
+.upper {
+    
+    background: white;
+    margin: 0;
+    padding-top: 3em;
+    padding-left: 0;
+}
+.upper h1{
+    text-align: center;
+}
+.mid{
+    list-style: none;
+    text-align: center;
+    background: gray;
+    margin: 0;
+    padding-left: 0;
+   
+}
+.mid li{
+    display: inline-block;
+    font-size:5em ;
+    border: 1px solid white;
+}
+.days{
+    display: grid;
+    grid-template-columns: repeat(7,1fr);
+}
+
+
+.numbers{
+    background: white;
+    padding:1em ;
+    list-style: none;
+    text-align: center;
+
+}
+.numbs{
+    display: grid;
+    grid-template-columns: repeat(7,1fr);
+    font-size:1.5em ;
+}
+.numbs li{
+    padding: 1em;
+}

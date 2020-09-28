@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html>
+    <head>
+<title>Tracker</title>
+<link rel="stylesheet" href="style.css">
+<meta charset="UTF-8">
+
+    </head>
+    <body>
+
+<ul class="upper">
+<h1>24 sept 2020<br><span style="text-transform: uppercase; font-weight: lighter;">Not WATCHING POR / NOT MASTRUBATING</span></h1>
+<ul class="mid">
+    <div class="days">
+    <li>Mo</li>
+    <li>Tu</li>
+    <li>We</li>
+    <li>Th</li>
+    <li>Fr</li>
+    <li>Sa</li>
+    <li>Su</li>
+    
+    </div>
+
+
+</ul>
+
+<ul class="numbers">
+    <div class="numbs">
+    <li id="test test1-1" style="background:grey;">21</li>
+    <li id="test test1-2" style="background:grey;">22</li>
+    <li id="test test1-3" style="background:grey;">23</li>
+    <li id="test2"  onclick='change()'>24</li>
+    <li id="test3"  onclick='change1()'>25</li>
+    <li id="test4"  onclick='change2()' >26</li>
+    <li id="test5"  onclick='change3()' >27</li>
+    <li id="test6"  onclick='change4()' >28</li>
+    <li id="test7"  onclick='change5()' >29</li>
+    <li id="test8"  onclick='change6()' >30</li>
+    <li id="test9"  onclick='change7()' >1</li>
+    <li id="test10" onclick='change8()' >2</li>
+    <li id="test11" onclick='change9()' >3</li>
+    <li id="test12" onclick='change10()' >4</li>
+    <li id="test13" onclick='change11()' >5</li>
+    <li id="test14" onclick='change12()' >6</li>
+    <li id="test15" onclick='change13()' >7</li>
+    <li id="test16" onclick='change14()' >8</li>
+    <li id="test17" onclick='change15()' >9</li>
+    <li id="test18" onclick='change16()' >10</li>
+    <li id="test19" onclick='change17()' >11</li>
+    <li id="test20" onclick='change18()' >12</li>
+    <li id="test21" onclick='change19()' >13</li>
+    <li id="test22" onclick='change20()' >14</li>
+    <li id="test23" onclick='change21()' >15</li>
+    <li id="test24" onclick='change22()' >16</li>
+    <li id="test25" onclick='change23()' >17</li>
+    <li id="test26" onclick='change24()' >18</li>
+    <li id="test27" onclick='change25()' >19</li>
+    <li id="test28" onclick='change26()' >20</li>
+    <li id="test29" onclick='change27()' >20</li>
+    <li id="test230"onclick='change28()'>21</li>
+    <li id="test231"onclick='change29()'>22</li>
+    <li id="test232"onclick='change30()'>23</li>
+   
+    </div>
+</ul>
+</ul>
+
+<script>
+
+
+//----------------------1
+if(!localStorage.getItem('bgcolor')) {
+  console.log('test2');
+} else {
+  save();
+}
+
+function change(){
+    document.getElementById('test2').style.background ='green';
+    localStorage.setItem('bgcolor', document.getElementById('test2').style.background ='green');
+    save()
+}; 
+
+function save(){
+    document.getElementById('test2').style.background ='green';
+};
+
+
+document.getElementById('test2').onclick = function(){if(!!localStorage.getItem('bgcolor')
+){
+  document.getElementById('test2').style.background ='white';
+  localStorage.removeItem('bgcolor');
+
+}else {
+  change();
+}
+}
+
+
+
+//----------------------2
+
+if(!localStorage.getItem('bgcolor2')) {
+  console.log('test3');
+} else {
+  save1();
+}
+
+function change1(){
+    document.getElementById('test3').style.background ='green';
+    localStorage.setItem('bgcolor2', document.getElementById('test3').style.background ='green');
+    save1()
+}; 
+
+function save1(){
+    document.getElementById('test3').style.background ='green';
+};
+
+document.getElementById('test3').onclick = function(){if(!!localStorage.getItem('bgcolor2')
+){
+  document.getElementById('test3').style.background ='white';
+  localStorage.removeItem('bgcolor2');
+
+}else {
+  change1();
+}
+}
+
+ //----------------------3
+if(!localStorage.getItem('bgcolor3')) {
+  console.log('test2');
+} else {
+  save2();
+}
+
+function change2(){
+    document.getElementById('test4').style.background ='green';
+    localStorage.setItem('bgcolor3', document.getElementById('test4').style.background ='green');
+    save2()
+}; 
+
+function save2(){
+    document.getElementById('test4').style.background ='green';
+};
+
+document.getElementById('test4').onclick = function(){if(!!localStorage.getItem('bgcolor3')
+){
+  document.getElementById('test4').style.background ='white';
+  localStorage.removeItem('bgcolor3');
+
+}else {
+  change2();
+}
+}
+//----------------------4
+
+if(!localStorage.getItem('bgcolor4')) {
+  console.log('test5');
+} else {
+  save3();
+}
+
+function change3(){
+    document.getElementById('test5').style.background ='green';
+    localStorage.setItem('bgcolor4', document.getElementById('test5').style.background ='green');
+    save3()
+}; 
+
+function save3(){
+    document.getElementById('test5').style.background ='green';
+};
+
+document.getElementById('test5').onclick = function(){if(!!localStorage.getItem('bgcolor4')
+){
+  document.getElementById('test5').style.background ='white';
+  localStorage.removeItem('bgcolor4');
+
+}else {
+  change3();
+}
+}
+ 
+
+ 
+
+</script>
+    </body>
+</html>
